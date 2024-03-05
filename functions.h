@@ -16,15 +16,15 @@ char removing_spaces (char ch); // пропуск пробілів
 char redword(char* word, char ch); // зчитування одного слова
 void printword(char* word); // виведення слова в прямому порядку
 void printRevword(char*word); // виведення слова в зворотному порядку
-Виконати завдання у трьох варіантах, використовуючи передачу параметру типу
-char за значенням, за адресою та через глобальну змінну.
+Варіант передачі за значеннями
  */
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 #define WORDLEN 30
-char removing_spaces (char ch); // пропуск пробілів
-char readword(char* word, char ch); // зчитування одного слова
-void printword(char* word); // виведення слова в прямому порядку
-void printRevword(char*word); // виведення слова в зворотному порядку
-int findlength(char * word); // знаходження довжини слова
+char removing_spaces (char ch); // пропуск пробілів; ch - символ на якому стоїть курсор
+char readword(char* word, char ch); // зчитування одного слова; word - масив символів де буде зберігатися слово,
+//ch - символ на якому стоїть курсор
+void printword(char* word); // виведення слова в прямому порядку; word - масив символів де буде зберігатися слово
+void printRevword(char*word); // виведення слова в зворотному порядку; word - масив символів де буде зберігатися слово
+int findlength(char * word); // знаходження довжини слова; word - масив символів де буде зберігатися слово
 #endif //FUNCTIONS_H
